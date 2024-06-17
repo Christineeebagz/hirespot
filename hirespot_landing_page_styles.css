@@ -1,0 +1,519 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; /* Ensure consistent box model */
+}
+
+#search_logo{
+    align-items: center;
+    font-size: 85px;
+}
+
+
+/*  WELCOME PAGE  */
+.welcome_page_edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:100px;
+    min-height: 80vh; /* Set minimum height to cover the entire viewport */
+ 
+    background-image: url("../christinebagazin/Desktop/hirespot_files/graphics/welcome.jpg");
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+}
+
+
+/* Header Styles */
+header {
+    background-color: #D2E3C8;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure header stays on top of other content */
+}
+
+/* Navigation Styles */
+nav {
+    width: auto; /* Allow navigation to occupy its natural width */
+    height: 100%; /* Allow navigation to expand vertically */
+    display: flex;
+    align-items: center; /* Align items vertically */
+    padding-right: 20px; /* Add right padding for spacing */
+}
+
+nav > ul {
+    display: flex;
+    align-items: left;
+    list-style: none; /* Remove default list styles */
+}
+
+nav > ul > li {
+    margin-left: 20px; 
+}
+
+nav > ul > li > a {
+    color: #9EC8B9;
+    text-decoration: none;
+    font-family: 'Conthrax', Arial, sans-serif; /* Added fallback font */
+}
+
+#top_nav_logo {
+    margin: 0; /* Reset margins */
+    font-family: 'Genos', sans-serif; /* Apply 'Genos' font family */
+    font-size: 35px;
+}
+
+.login-button {
+    padding: 5px 20px;
+    background-color: #082009;
+    color: #D2E2C8;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-button:hover {
+    background-color: #9EC8B9;
+    color: #092635;
+}
+
+.logo_top_navi {
+    display:flex;
+    height: auto; 
+    width: auto; /* Allow the width to adjust automatically */
+    max-width: 15   0px; /* Set a maximum width for the logo */
+    margin-right: 20px; /* Add right margin for spacing between the logo and site name */
+}
+
+
+.logo_top_navi {
+    max-width: 150px; 
+    margin-left:20px;
+}
+
+
+#top_nav_logo {
+    margin: 0; /* Reset margins */
+    font-family: 'Genos', sans-serif; /* Apply 'Genos' font family */
+    font-size: 35px;
+}
+
+/* 
+#top_nav_logo {
+    padding-left:0;
+    font-family: 'Genos', sans-serif; /* Apply 'Genos' font family */
+    /* font-size: 35px;
+    align-items: left;
+} */ */
+
+/* Styles for the modal toggle */
+/* .modal-toggle {
+    display: none;
+} */
+
+/* Styles for the modal overlay */
+/* .modal {
+    display: none;
+    position: fixed;
+    z-index: 999; /* Ensure modal stays above other content */
+    /* left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+} */ */
+
+/* Styles for the modal content */
+/* .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    position: relative;
+} */
+
+/* Styles for the close button */
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* LANDING PAGE SECTION -> FIRST WINDOW FOR USER TO SEE */
+.landing {
+    height: 70vh; /* Set the height to 60% of the viewport height */
+    margin-top: -30vh; /* Move the sections up by 10% of their height */
+    overflow: hidden; /* Hide any overflow from the overlapping */
+}
+
+/* Apply slanted design to each landing section */
+#landing_1 {
+    background-color: rgba(115, 144, 114, 0.8);
+    /* background-color: #86A789; Color for the first section */
+    /* transform: skewY(-5deg); Skew vertically */
+    z-index: 2; /* Ensure the first section stays below other sections */
+}
+
+#landing_2 {
+    background-color: #739072; /* Color for the second section */
+    transform: skewY(5deg); /* Skew vertically */
+    margin-top: -10vh; /* Move the second section down by 10% of the viewport height */
+}
+
+#landing_3 {
+    background-color: #4F6F52; /* Color for the third section */
+    transform: skewY(-5deg); /* Skew vertically */
+}
+
+
+
+
+/* LOGIN PAGE FOR ENTERING ACCOUNT: EMAIL, PASSWORD */
+
+#login_body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background: url('../christinebagazin/Desktop/hirespot_files/graphics/login_bg.png');
+    background-size: cover;
+    background-position:center;
+
+}
+
+#landing_body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background: url('../christinebagazin/Desktop/hirespot_files/graphics/welcome.jpg');
+    background-size: cover;
+    background-position:center;
+
+}
+
+
+
+
+.wrapper {
+    width:420px;
+    background: transparent;
+    border: 2px solid #4F6F52;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px #D2E3C8;
+    color: white;
+    border-radius: 10px;
+    padding: 50px 40px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box{
+    position:relative;
+    width:100%;
+    height:50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width:100%;
+    height:100%;
+    background:transparent;
+    border:none;
+    outline:none;
+    border: 2px solid #4F6F52;
+    border-radius:40px;
+    font-size: 20px;
+    color:white;
+    padding: 20px 45px 20px 20px;
+}
+
+input-box input::placeholder {
+    color: white;
+}
+
+.login_placeholder{
+    font-family:'Genos';
+    color:white;
+}
+
+placeholder{
+    font-family:'Genos';
+}
+
+.input-box i{
+    position:absolute;
+    right:20px;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot{
+    display:flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+    font-family:'Genos';
+}
+
+.remember-forgot label input {
+    accent-color: green;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    font-family:'Genos';
+    color:white;
+    text-decoration:none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+/* .wrapper .btn{
+    width:100%;
+    height:45px;
+    background: #9EC8B9;
+    border:none;
+    outline:none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #4F6F52;
+    cursor:pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
+
+.wrapper .btn:hover {
+    background: #4F6F52; /* Change background color on hover */
+
+.btn {
+    display: block;
+    width: 100%;
+    height: 45px;
+    background: #9EC8B9;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #4F6F52;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    line-height: 45px;
+}
+
+.btn:hover {
+    background: #4F6F52;
+}
+
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a{
+    font-family:'Genos';
+    color: #4F6F52;
+    text-decoration: none;
+    font-weight:600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+.login_button{
+    text-decoration:none;
+}
+
+
+
+/* CALENDAR / TRACKER EVENTS 
+*/
+
+
+button {
+    width: 75px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px gray;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  #header {
+    margin-top:30px;
+    padding: 10px;
+    color: #4F6F52;
+    font-size: 26px;
+    font-family: 'Genos';
+    display: flex;
+    justify-content: space-between;
+  }
+  #header button {
+    background-color:#4F6F52;
+  }
+  #container {
+    width: 770px;
+  }
+  #weekdays {
+    width: 100%;
+    display: flex;
+    color: #247BA0;
+  }
+  #weekdays div {
+    width: 90px;
+    padding: 10px;
+  }
+  #calendar {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .day {
+    width: 100px;
+    padding: 10px;
+    height: 100px;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 5px;
+    box-shadow: 0px 0px 3px #CBD4C2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .day:hover {
+    background-color: #e8faed;
+  }
+  
+  .day + #currentDay {
+    background-color:#e8f4fa;
+  }
+  .event {
+    font-size: 10px;
+    padding: 3px;
+    background-color: #4F6F52;
+    color: white;
+    border-radius: 5px;
+    max-height: 55px;
+    overflow: hidden;
+  }
+  .padding {
+    cursor: default !important;
+    background-color: #FFFCFF !important;
+    box-shadow: none !important;
+  }
+  #newEventModal, #deleteEventModal {
+    display: none;
+    z-index: 20;
+    padding: 25px;
+    background-color: #e8f4fa;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 5px;
+    width: 350px;
+    top: 100px;
+    left: calc(50% - 175px);
+    position: absolute;
+    font-family: sans-serif;
+  }
+  #eventTitleInput {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 3px gray;
+  }
+  #eventTitleInput.error {
+    border: 2px solid red;
+  }
+  #cancelButton, #deleteButton {
+    background-color: #d36c6c;
+  }
+  #saveButton, #closeButton {
+    background-color: #92a1d1;
+  }
+  #eventText {
+    font-size: 14px;
+  }
+  #modalBackDrop {
+    display: none;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+  }
+
+
+
+/* SEARCH SECTION */
+#search_body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Genos';
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar{
+    width:100%;
+    max-width: 700px;
+    background: white;
+    display:flex;
+    align-items:center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    border:none;
+    color:#082009;
+}
+
+.searchcontainer{
+    width:100%;
+    min-height: 100vh;
+    padding: 5%;
+    padding-top: 5%;
+    background-color:#D2E3C8;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    align-items: top;
+    align-content: center;
+    justify-content: center;
+
+
+}
+

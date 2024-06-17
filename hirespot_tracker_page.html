@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Tracker | HireSpot</title>
+    <link rel="stylesheet" href="hirespot_landing_page_styles.css"/>
+    <link rel="stylesheet" href="style_calendar.css">
+  </head>
+  <body>
+    <header>
+        <img src="../christinebagazin/Desktop/hirespot_files/graphics/logowithname.png" alt="Logo" class="logo_top_navi" id="logo_top_navi">
+            <nav class="navi" id="top_nav">
+                <ul>
+                    
+                    
+                    <li><a href="hirespot_badges_page.html" class="login-button">Badges</a></li>
+                    <li><a href="hirespot_search_page.html" class="login-button">Return to Search</a></li>
+                    </ul>
+            </nav>
+    </header>
+    <break></break>
+    <div id="container">
+      <div id="header">
+        <div id="monthDisplay"></div>
+        <div>
+          <button id="backButton">Back</button>
+          <button id="nextButton">Next</button>
+        </div>
+      </div>
+
+      <div id="weekdays">
+        <div>Sunday</div>
+        <div>Monday</div>
+        <div>Tuesday</div>
+        <div>Wednesday</div>
+        <div>Thursday</div>
+        <div>Friday</div>
+        <div>Saturday</div>
+      </div>
+
+      <div id="calendar"></div>
+    </div>
+
+    <div id="newEventModal">
+      <h2>New Event</h2>
+
+      <input id="eventTitleInput" placeholder="Event Title" />
+
+      <button id="saveButton">Save</button>
+      <button id="cancelButton">Cancel</button>
+    </div>
+
+    <div id="deleteEventModal">
+      <h2>Event</h2>
+
+      <p id="eventText"></p>
+
+      <button id="deleteButton">Delete</button>
+      <button id="closeButton">Close</button>
+    </div>
+
+    <div id="modalBackDrop"></div>
+
+    <dialog class="modal" id="modal">
+        <h2>Congratulations!</h2>
+        <p>You have 0 badges <3</p>
+        <button class = "button close-button">Close</button>
+
+    </dialog>
+   
+    <script src="./script.js"></script>
+
+
+  
+       
+    
+
+
+  </body>
+  <footer>
+   
+  </footer>
+</html>
